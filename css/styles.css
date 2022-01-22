@@ -52,11 +52,8 @@
   /* flex-wrap: nowrap; */
   /* линия для портфолио в хэдере 
   border-bottom:slategrey;*/
-  padding-top: 24px;
-  display: flex;
-  align-items: center;
+
   /* justify-content: space-between; */
-  padding-bottom: 5px;
   border-bottom: 1px solid #ECECEC;
   }
   /* Логотип */
@@ -73,6 +70,11 @@
     text-decoration: var(--primary-accent-color);
   }
   /* Навигация меню */
+  ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
   .navigation {
       display: flex;
       align-items: center;
@@ -87,6 +89,9 @@
      display: flex;
      align-items: center;
    }
+   .phone {
+    margin-left: 48px;
+   }
     .link {
       /* display: inline-block; */
       text-decoration:none;
@@ -94,9 +99,10 @@
       padding: auto;
       }
   
-     .link+.link {
-     margin-left: 48px;
+     .site-nav.site-nav-li:not(last-child) {
+     margin-right: 50px;
       }
+
     .current {
     display: inline-block;
     color:var(--primary-accent-color);
@@ -138,8 +144,12 @@
   /* flex-wrap: nowrap; */
   display: flex;
   /* justify-content: space-between; */
+   }
+
+  .site-nav-li+.site-nav-li {
+    margin-left: 50px;
   }
-  
+
   .site-nav:hover {
     color:var(--primary-accent-color);
   }
@@ -148,13 +158,16 @@
     color:var(--primary-accent-color);
   }
   
-  .connect {
+ .connect {
     display: flex;
     margin-left: auto;
     align-items: center;
   }
-  
+  .connect.item+.item {
+  margin-left: 48px;
+  }
   .header-contacts {
+  margin-right: 51px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -171,6 +184,14 @@
   text-align: center;
   width: 1600px;
   height: 600px;
+    }
+  .flex-projects {
+display: flex;
+width: 1230px;
+padding-left: 15px; 
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
   }
   .title-h1 {
   font-weight: 900;
@@ -350,6 +371,11 @@
   letter-spacing: 0.03em;
   }
    /* Портфолио, сразу поcле хєдера */
+   .portfolio-container {
+display:flex;
+align-items: center;
+justify-content: center;
+   }
   
   .title-project {
     font-size: 0;
@@ -373,6 +399,12 @@
   }
   /* Кнопки в ряд */
   .buttons-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 22px;
+    margin-bottom: 50px;
+
   /* shadow-middle */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
