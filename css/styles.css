@@ -88,6 +88,8 @@
    .user {
      display: flex;
      align-items: center;
+     padding-bottom:30px;
+     padding-top: 30px;
    }
    .phone {
     margin-left: 48px;
@@ -163,16 +165,21 @@
     margin-left: auto;
     align-items: center;
   }
-  .connect.item+.item {
-  margin-left: 48px;
+
+  .phone { 
+    margin-left: 51px;
   }
+
+
   .header-contacts {
-  margin-right: 51px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  }
+  .connect.header-contacts+ .header-contacts {
+    margin-left: 51px;
   }
   
   .header-list {
@@ -182,8 +189,8 @@
   .solutions {
   background: #2F303A;
   text-align: center;
-  width: 1600px;
-  height: 600px;
+
+  padding: 200px 0px;
     }
   .flex-projects {
 display: flex;
@@ -192,6 +199,9 @@ padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
 margin-right: auto;
+  }
+  h1,h2,h3,p {
+    margin:0;
   }
   .title-h1 {
   font-weight: 900;
